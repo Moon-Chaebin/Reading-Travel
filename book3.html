@@ -18,19 +18,30 @@
     <meta name="author" content="Moon-Chaebin">
     <title>역행자</title>
     <style>
-       header {
+        header {
             border-bottom: solid black 1px;
         }
 
         h1 {
             font-size: 60px;
         }
-
         body {
             text-align: center;
+            margin: 0;
         }
-        ul, ol, li {
+        ul {
+            text-align: left;
             list-style: none;
+            margin: 0;
+            padding: 10px;
+            border-right: solid 1px black;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 1fr 9fr;
+        }
+        #content {
+            border-bottom: solid 1px black;
         }
     </style>
 </head>
@@ -39,9 +50,16 @@
         <h1><a href="index.html">Reading Travel</a></h1>
     </header>
     <div id="content">
-        <img src="book3.jpg" alt="참을 수 없는 존재의 가벼움">
-        <div>
-            <input type="text" id="text">
+        <div id="grid">
+            <ul>
+                <li><a href="book1.html">이기적 유전자</a></li>
+                <li><a href="book2.html">참을 수 없는 존재의 가벼움</a></li>
+                <li><a href="book3.html">역행자</a></li>
+                <li><a href="book4.html">지적자본론</a></li>
+            </ul>
+            <div>
+                <img src="book3.jpg" alt="역행자">
+            </div>
         </div>
     </div>
     <footer>
